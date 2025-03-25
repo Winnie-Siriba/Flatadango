@@ -3,31 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLATDANGO</title>
-    <style>
-        aside {
-
-        }
-    </style>
+    <title>Flatdango</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div id="menu">
-            <h2>MENU</h2>
-            <ul id="movie-list">
-            </ul>
-    </div>
-    <div id="movie-details">
-        <h2>MOVIE DETAILS</h2>
-        <img src ="https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg">
-        <div id="movie-description">
-            <h3>[MOVIE TITLE]</h3>
-            <p>[RUNTIME]minutes</p>
-            <p>[Insert movie description here]</p>
-            <p>[Showtime] [X]remaining tickets</p>
-            <button>Buy Ticket</button>  
+    <div id="container">
+        <div id="sidebar">
+          <ul id="films">
+            <li class="placeholder">Loading movies...</li>
+          </ul>
         </div>
-    </div>
-    <script src="index.js"></script>
+        <div id="detail">
+          <h2 id="movie-title"></h2>
+          <img id="movie-poster" />
+          <p id="movie-explanation"></p>
+          <p><strong>Runtime:</strong> <span id="movie-runtime"></span> mins</p>
+          <p><strong>Showtime:</strong> <span id="movie-showtime"></span></p>
+          <p><strong>Tickets Available:</strong> <span id="movie-tickets"></span></p>
+          <button id="buy-ticket">Buy Ticket</button>
+        </div>
+      </div>
+      <script src="index.js"></script> 
 </body>
 </html>
